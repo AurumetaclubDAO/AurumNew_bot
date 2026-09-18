@@ -43,7 +43,7 @@ Sesja: płynność w godzinach London + NY. Poza nimi spready rosną.
 | Symbol | Uwagi |
 |---|---|
 | NAS100 | najwyższa zmienność z indeksów, mocna korelacja z sentymentem tech |
-| US500 | szerszy rynek — skorelowany z NAS100, licz jako jedną pozycję |
+| SP500 | szerszy rynek — skorelowany z NAS100, licz jako jedną pozycję |
 
 Sesja: 15:30–22:00 CET (cash session). Poza nią — tylko obserwacja, nie wejścia.
 
@@ -51,10 +51,18 @@ Sesja: 15:30–22:00 CET (cash session). Poza nią — tylko obserwacja, nie wej
 
 ## Symbole brokera
 
-Skille wskazują, że pracujesz na symbolach **VANTAGE** (NAS100, ETHUSD).
-`NOT VERIFIED` — potwierdź dokładne tickery dla XAUUSD, USOIL, US500, BTCUSD
-u swojego brokera i podmień w tabelach powyżej, zanim pierwszy raz odpalisz skan.
-Zły ticker = dane z innego instrumentu = cały run do kosza.
+Symbole **VANTAGE**, potwierdzone przez Karola 2026-09-18:
+
+| Koszyk | Tickery |
+|---|---|
+| Krypto | `BTCUSD` · `ETHUSD` |
+| Surowce | `XAUUSD` · `USOIL` |
+| Indeksy | `NAS100` · `SP500` |
+
+Uwaga: szeroki indeks US to u tego brokera **`SP500`**, nie `US500`.
+
+Zły ticker = dane z innego instrumentu = cały run do kosza, a nic w wyniku
+tego nie zasygnalizuje. Przy zmianie brokera lub konta — zweryfikuj ponownie.
 
 ---
 
