@@ -1,4 +1,16 @@
-# AI Investment Team
+# AurumNew_bot — systemy analityczne dla Claude Code
+
+Dwa niezależne moduły. Żaden z nich nie składa zleceń i nie łączy się z brokerem.
+Oba kończą się dokumentem, a decyzję podejmuje człowiek.
+
+| Moduł | Do czego | Horyzont |
+|---|---|---|
+| [`AI-INVESTMENT-TEAM/`](AI-INVESTMENT-TEAM/) | research fundamentalny spółki → memo inwestycyjne | długi |
+| [`AI-TRADER/`](AI-TRADER/README.md) | pętla monitoringu rynku → memo decyzyjne (paper) | krótki / swing |
+
+---
+
+# 1. AI Investment Team
 
 Struktura research'u inwestycyjnego dla Claude Code, odwzorowana 1:1 z guide'a
 "Build Your AI Investment Team" (@seb.ai).
@@ -76,10 +88,54 @@ Bez tego memo powstanie, ale będzie oparte wyłącznie na tym, co sam włożysz
 - FAKTY / ANALIZA / ZAŁOŻENIA / SCENARIUSZE trzymane osobno.
 - Nigdy nie wklejaj do promptów numerów kont, haseł ani kluczy API.
 
-## Disclaimer
+---
 
-System wyłącznie edukacyjno-badawczy. Nie stanowi doradztwa finansowego,
-inwestycyjnego, podatkowego ani prawnego i nie jest rekomendacją kupna lub
+# 2. AI Trader
+
+Pętla monitoringu rynku odwzorowana z guide'a "How to Build a 24/7 AI Trader with
+Fable 5" (@seb.ai), spięta z istniejącymi skillami (`tradingview-ema`, `trade-plan`)
+zamiast ręcznego wklejania danych.
+
+```
+Scan -> Signals -> Trade Plan -> Risk Check -> Monitor -> Decision -> CZŁOWIEK
+```
+
+```
+AI-TRADER/
+├── CLAUDE.md               reguły twarde
+├── WATCHLIST.md            krypto / surowce / indeksy + interwały
+├── RISK-RULES.md           limity i blokady — plik z prawem weta
+├── MASTER-PROMPT.md        pełny przebieg 6 etapów
+├── ONE-COMMAND-START.md    skrót na kolejne uruchomienia
+├── stages/                 01-scan … 06-decision
+├── data/                   snapshoty skanów + SOURCES.md
+├── setups/                 aktywne plany (paper)
+├── journal/TRADE-LOG.md    log decyzji i wyników
+└── templates/              plan / memo / wpis do dziennika
+```
+
+Start: `cd AI-TRADER && claude`, potem wklej `MASTER-PROMPT.md`.
+Szczegóły i parametry ryzyka: [`AI-TRADER/README.md`](AI-TRADER/README.md).
+
+**„24/7" jest umowne.** Pętla działa wtedy, kiedy ją odpalisz. Automatyzacja wymaga
+harmonogramu, hostingu i feedu danych — i nie ma sensu przed zebraniem historii
+w `journal/TRADE-LOG.md`.
+
+## Reguły modułu tradingowego
+
+- Nigdy nie składa zleceń, nigdy nie łączy się z brokerem. Paper only.
+- Nigdy ślepego sygnału kupuj/sprzedaj — zawsze invalidacja i kontekst ryzyka.
+- Limity z `RISK-RULES.md` są twarde. Złamany limit = `BLOCKED`, bez obejść.
+- Stop wynika ze struktury, nie z docelowego R:R.
+- Brak danych = `NOT VERIFIED`. Nigdy zgadywanie ceny ani wskaźnika.
+- Klucze API wyłącznie w `.env` (gitignored).
+
+---
+
+# Disclaimer (dotyczy obu modułów)
+
+Systemy wyłącznie edukacyjno-badawcze. Nie stanowią doradztwa finansowego,
+inwestycyjnego, podatkowego ani prawnego i nie są rekomendacją kupna lub
 sprzedaży jakiegokolwiek instrumentu. Wyniki AI mogą być błędne lub nieaktualne.
 Każda decyzja pozostaje po stronie człowieka; rozważ konsultację z licencjonowanym
 specjalistą.
@@ -89,4 +145,8 @@ kojarzonymi z Warrenem Buffettem, Rayem Dalio, Peterem Lynchem i Howardem
 Marksem. Żadna z tych osób nie stworzyła, nie zatwierdziła, nie poparła tego
 systemu ani nie jest z nim w żaden sposób powiązana.
 
-Źródło struktury: darmowy guide "Build Your AI Investment Team" (@seb.ai).
+Trading niesie realne ryzyko straty kapitału. Moduł `AI-TRADER/` działa wyłącznie
+w trybie paper i nie ma żadnego połączenia z rachunkiem maklerskim.
+
+Źródła struktury: darmowe guide'y "Build Your AI Investment Team" oraz
+"How to Build a 24/7 AI Trader with Fable 5" (@seb.ai).

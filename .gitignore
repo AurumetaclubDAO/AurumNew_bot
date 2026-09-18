@@ -1,0 +1,16 @@
+# sekrety — nigdy do repo
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# dane lokalne
+AI-TRADER/data/snapshots/*
+!AI-TRADER/data/snapshots/.gitkeep
+
+# system
+.DS_Store
+node_modules/
+__pycache__/
+venv/
