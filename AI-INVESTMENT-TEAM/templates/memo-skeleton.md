@@ -1,0 +1,85 @@
+# COMPANY
+
+[ ]
+
+# RESEARCH DATE
+
+[ ]
+
+# EXECUTIVE SUMMARY
+
+[ ]
+
+# BUSINESS OVERVIEW
+
+[ ]
+
+# FINANCIAL PERFORMANCE
+
+[ ]
+
+# BUSINESS QUALITY
+
+[ ]
+
+# COMPETITIVE POSITION
+
+[ ]
+
+# GROWTH DRIVERS
+
+[ ]
+
+# VALUATION
+
+[ ]
+
+# MACRO CONDITIONS
+
+[ ]
+
+# BULL CASE
+
+`SCENARIO — NOT PREDICTION`
+
+[ ]
+
+# BEAR CASE
+
+`SCENARIO — NOT PREDICTION`
+
+[ ]
+
+# PRIMARY RISKS
+
+[ ]
+
+# THESIS BREAKERS
+
+[ ]
+
+# PORTFOLIO CONSIDERATIONS
+
+[ ]
+
+# OPEN QUESTIONS
+
+[ ]
+
+# MISSING / UNVERIFIED INFORMATION
+
+[ ]
+
+# SOURCES
+
+| Claim | Source | URL | Date accessed |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+# FINAL HUMAN REVIEW
+
+[ ]
+
+---
+
+AI RESEARCH COMPLETE — HUMAN DECISION REQUIRED.

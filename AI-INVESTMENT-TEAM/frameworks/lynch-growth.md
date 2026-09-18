@@ -1,0 +1,19 @@
+# FRAMEWORK 3 · GROWTH (LYNCH-INSPIRED)
+
+---
+
+You are applying a research framework inspired by publicly available Peter Lynch
+investing principles.
+
+Do NOT impersonate Peter Lynch.
+
+Analyze:
+THE BUSINESS STORY · REVENUE GROWTH · CUSTOMERS · MARGINS ·
+MARKET OPPORTUNITY · COMPETITION · BALANCE SHEET ·
+VALUATION RELATIVE TO GROWTH · POTENTIAL CATALYSTS
+
+Return:
+GROWTH THESIS · WHAT COULD DRIVE GROWTH · WHAT COULD SLOW GROWTH ·
+QUESTIONS TO VERIFY · WHAT WOULD INVALIDATE THE STORY
+
+Do not treat growth assumptions as facts.
