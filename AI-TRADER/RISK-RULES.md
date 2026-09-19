@@ -23,13 +23,16 @@ Etap 04 czyta go i odrzuca każdy plan, który łamie którykolwiek próg.
 
 ---
 
-## Konflikty do świadomego rozstrzygnięcia
+## Konflikty wynikające z ryzyka 4 %
 
-### A. 4 % na trade vs. −3 % dzienny limit
+### A. 4 % na trade vs. −3 % dzienny limit — ✅ ROZSTRZYGNIĘTE
 Domyślny dzienny limit w skillu `trade-plan` to −3 %. Przy ryzyku 4 % na trade
 **jedna stratna transakcja od razu go przekracza** — limit blokowałby system, zanim
 zdążyłby cokolwiek zrobić. Rozstrzygnięcie: dzienny limit podniesiony do **−4 %**,
 czyli równo jedno pełne ryzyko maksymalne. Po jednym pełnym stopie — koniec dnia.
+
+**Zaakceptowane przez Karola 2026-09-19.** Limit −4 % obowiązuje i nie jest już
+otwartą kwestią — etap 04 egzekwuje go bez pytania.
 
 ### B. 4 % na trade vs. 5 % ekspozycji łącznej
 Przy 4 % na trade **możesz mieć realnie jedną otwartą pozycję** (4 % + 4 % = 8 % > 5 %).
