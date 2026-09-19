@@ -32,7 +32,7 @@ Format pojedynczego wpisu: `templates/journal-entry.md`
 
 | Data | Co zmienione | Z → na | Powód |
 |---|---|---|---|
-| | | | |
+| 2026-09-19 | Dzienny limit straty | −3 % → **−4 %** | Kolizja z ryzykiem 4 % na trade: jedna stratna transakcja przekraczała stary limit. Nowy = równo jedno pełne ryzyko maksymalne. Zaakceptowane przez Karola. |
 
 ---
 
