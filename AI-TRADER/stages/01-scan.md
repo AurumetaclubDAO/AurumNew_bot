@@ -27,6 +27,7 @@ Odczyt trendu prowadź metodą ze skilla **`tradingview-ema`** — nie wymyślaj
 | Trend HTF | wzrostowy / spadkowy / zakres + wartość ADX + układ EMA |
 | Trend LTF | j.w. |
 | Struktura | ostatnie swingi: HH/HL czy LH/LL — z poziomami |
+| Pozycja w zakresie | `(cena − HL) / (HH − HL) × 100%` — **policz, nie szacuj** |
 | Cena vs EMA200 | powyżej / poniżej / przy |
 | Wolumen | rosnący / spadkowy / neutralny na ruchu kierunkowym |
 | Kluczowe poziomy | 2–3 konkretne ceny, nie „okolice" |

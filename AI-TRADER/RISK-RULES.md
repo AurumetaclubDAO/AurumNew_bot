@@ -85,7 +85,7 @@ Napisz, czego brakuje, i zakończ.
 | Grupa | Instrumenty |
 |---|---|
 | Krypto beta | BTC, ETH i altcoiny — zawsze skorelowane |
-| Indeksy US | NAS100, US500, US30 |
+| Indeksy US | NAS100, SP500, US30 |
 | Ryzyko/dolar | XAUUSD vs indeksy — korelacja zmienna, sprawdzaj przed drugą pozycją |
 
 ---
